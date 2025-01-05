@@ -168,7 +168,7 @@ msgid "Choice Question"
 msgstr ""
 
 #: dojo/forms.py
-msgid "Dismissable?"
+msgid "Dismissible?"
 msgstr ""
 
 #: dojo/forms.py
@@ -322,7 +322,7 @@ msgstr ""
 #: dojo/models.py
 msgid ""
 "With this setting turned on, Dojo maintains an audit log of changes made to "
-"entities (Findings, Tests, Engagements, Procuts, ...)If you run big import "
+"entities (Findings, Tests, Engagements, Products, ...)If you run big import "
 "you may want to disable this because the way django-auditlog currently "
 "works, there's a big performance hit. Especially during (re-)imports."
 msgstr ""
@@ -375,7 +375,7 @@ msgstr ""
 
 #: dojo/models.py
 msgid ""
-"Allows incoming requests without a secret (discouraged legacy behaviour)"
+"Allows incoming requests without a secret (discouraged legacy behavior)"
 msgstr ""
 
 #: dojo/models.py
@@ -387,7 +387,7 @@ msgid "Secret needed in URL for incoming JIRA Webhook"
 msgstr ""
 
 #: dojo/models.py
-msgid "JIRA issue labels space seperated"
+msgid "JIRA issue labels space separated"
 msgstr ""
 
 #: dojo/models.py
@@ -534,7 +534,7 @@ msgid "Enables Finding SLA's for time to remediate."
 msgstr ""
 
 #: dojo/models.py
-msgid "Enable Notifiy SLA's Breach for active Findings"
+msgid "Enable Notify SLA's Breach for active Findings"
 msgstr ""
 
 #: dojo/models.py
@@ -544,7 +544,7 @@ msgid ""
 msgstr ""
 
 #: dojo/models.py
-msgid "Enable Notifiy SLA's Breach for active, verified Findings"
+msgid "Enable Notify SLA's Breach for active, verified Findings"
 msgstr ""
 
 #: dojo/models.py
@@ -554,7 +554,7 @@ msgid ""
 msgstr ""
 
 #: dojo/models.py
-msgid "Enable Notifiy SLA's Breach for Findings linked to JIRA"
+msgid "Enable Notify SLA's Breach for Findings linked to JIRA"
 msgstr ""
 
 #: dojo/models.py
@@ -1609,12 +1609,12 @@ msgid "Source file path of the attack vector."
 msgstr ""
 
 #: dojo/models.py
-msgid "Number of occurences"
+msgid "Number of occurrences"
 msgstr ""
 
 #: dojo/models.py
 msgid ""
-"Number of occurences in the source tool when several vulnerabilites were "
+"Number of occurrences in the source tool when several vulnerabilities were "
 "found and aggregated by the scanner."
 msgstr ""
 
@@ -1766,7 +1766,7 @@ msgstr ""
 
 #: dojo/models.py
 msgid ""
-"This dismissable message will be displayed on all pages for authenticated "
+"This dismissible message will be displayed on all pages for authenticated "
 "users. It can contain basic html tags, for example <a href='https://www.fred."
 "com' style='color: #337ab7;' target='_blank'>https://example.com</a>"
 msgstr ""
@@ -1905,7 +1905,7 @@ msgid "Globally send SLA notifications as comment?"
 msgstr ""
 
 #: dojo/models.py
-msgid "This setting can be overidden at the Product level"
+msgid "This setting can be overridden at the Product level"
 msgstr ""
 
 #: dojo/models.py
@@ -1987,7 +1987,7 @@ msgid "Get notified of (upcoming) Risk Acceptance expiries"
 msgstr ""
 
 #: dojo/models.py
-msgid "Succesfully"
+msgid "Successfully"
 msgstr ""
 
 #: dojo/models.py
@@ -2157,7 +2157,7 @@ msgid "Note deleted."
 msgstr ""
 
 #: dojo/notes/views.py
-msgid "Note was not succesfully deleted."
+msgid "Note was not successfully deleted."
 msgstr ""
 
 #: dojo/notes/views.py
@@ -2165,7 +2165,7 @@ msgid "Note edited."
 msgstr ""
 
 #: dojo/notes/views.py
-msgid "Note was not succesfully edited."
+msgid "Note was not successfully edited."
 msgstr ""
 
 #: dojo/notifications/helper.py
@@ -3198,7 +3198,7 @@ msgid ""
 msgstr ""
 
 #: dojo/templates/dojo/forgot_username.html
-msgid "Retreive my username"
+msgid "Retrieve my username"
 msgstr ""
 
 #: dojo/templates/dojo/forgot_username_done.html
@@ -3757,7 +3757,7 @@ msgid ""
 "                                     After submitting the search query, "
 "tabbed results will be displayed. The findings tab will have the possibility "
 "to\n"
-"                                     to perform more finegrained filtering "
+"                                     to perform more fine-grained filtering "
 "on status fields, test type, etc."
 msgstr ""
 
@@ -3775,7 +3775,7 @@ msgid "Languages"
 msgstr ""
 
 #: dojo/templates/dojo/simple_search.html
-msgid "Application Technolgies"
+msgid "Application Technologies"
 msgstr ""
 
 #: dojo/templates/dojo/simple_search.html
