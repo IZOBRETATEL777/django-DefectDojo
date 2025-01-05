@@ -27,7 +27,7 @@ RUN \
     rm -rf /var/cache/apk/* && \
   true
 COPY requirements.txt ./
-# CPUCOUNT=1 is needed, otherwise the wheel for uwsgi won't always be build succesfully
+# CPUCOUNT=1 is needed, otherwise the wheel for uwsgi won't always be build successfully
 # https://github.com/unbit/uwsgi/issues/1318#issuecomment-542238096
 RUN CPUCOUNT=1 pip3 wheel --wheel-dir=/tmp/wheels -r ./requirements.txt
 

@@ -486,7 +486,7 @@ def get_jira_updated(finding):
     return None
 
 
-# Used for unit testing so geting all the connections is manadatory
+# Used for unit testing so getting all the connections is mandatory
 def get_jira_status(finding):
     if finding.has_jira_issue:
         j_issue = finding.jira_issue.jira_id
@@ -500,7 +500,7 @@ def get_jira_status(finding):
     return None
 
 
-# Used for unit testing so geting all the connections is manadatory
+# Used for unit testing so getting all the connections is mandatory
 def get_jira_comments(finding):
     if finding.has_jira_issue:
         j_issue = finding.jira_issue.jira_id
@@ -1491,7 +1491,7 @@ def finding_group_link_jira(request, finding_group, new_jira_issue_key):
 
     jira_issue.jira_key = new_jira_issue_key
     # jira timestampe are in iso format: 'updated': '2020-07-17T09:49:51.447+0200'
-    # seems to be a pain to parse these in python < 3.7, so for now just record the curent time as
+    # seems to be a pain to parse these in python < 3.7, so for now just record the current time as
     # as the timestamp the jira link was created / updated in DD
     jira_issue.jira_creation = timezone.now()
     jira_issue.jira_change = timezone.now()
@@ -1621,11 +1621,11 @@ def process_jira_epic_form(request, engagement=None):
                     messages.add_message(
                         request,
                         messages.SUCCESS,
-                        "Push to JIRA for Epic queued succesfully, check alerts on the top right for errors",
+                        "Push to JIRA for Epic queued successfully, check alerts on the top right for errors",
                         extra_tags="alert-success")
                 else:
                     error = True
-                    logger.debug("Push to JIRA for Epic failey")
+                    logger.debug("Push to JIRA for Epic failed")
                     messages.add_message(
                         request,
                         messages.ERROR,

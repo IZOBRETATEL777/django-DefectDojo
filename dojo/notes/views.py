@@ -125,7 +125,7 @@ def edit_note(request, id, page, objid):
             return HttpResponseRedirect(reverse(reverse_url, args=(object_id, )))
         messages.add_message(request,
                             messages.SUCCESS,
-                            _("Note was not succesfully edited."),
+                            _("Note was not successfully edited."),
                             extra_tags="alert-danger")
     else:
         if note_type_activation:

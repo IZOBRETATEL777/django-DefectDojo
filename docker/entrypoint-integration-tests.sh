@@ -11,7 +11,7 @@ while [  $COUNTER -lt 10 ]; do
     curl -s -o "/dev/null" "$DD_BASE_URL" -m 120
     CR=$(curl --insecure -s -m 10 -I "${DD_BASE_URL}login?next=/" | grep -E "^HTTP" | cut  -d' ' -f2)
     if [ "$CR" == 200 ]; then
-        echo "Succesfully displayed login page, starting integration tests"
+        echo "Successfully displayed login page, starting integration tests"
         break
     fi
     echo "Waiting: cannot display login screen; got HTTP code $CR"

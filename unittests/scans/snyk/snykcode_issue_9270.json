@@ -2505,7 +2505,7 @@
                           "lineChange": "none"
                         },
                         {
-                          "line": " .then(() => console.log(\"Succesfully connected to MongoDB.\"))\n",
+                          "line": " .then(() => console.log(\"Successfully connected to MongoDB.\"))\n",
                           "lineNumber": 20,
                           "lineChange": "none"
                         },

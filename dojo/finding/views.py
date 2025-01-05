@@ -2762,7 +2762,7 @@ def finding_bulk_update_all(request, pid=None):
                             find.last_reviewed = timezone.now()
                             find.last_reviewed_by = request.user
 
-                        # use super to avoid all custom logic in our overriden save method
+                        # use super to avoid all custom logic in our overridden save method
                         # it will trigger the pre_save signal
                         find.save_no_options()
 
@@ -3304,7 +3304,7 @@ def unlink_jira(request, fid):
             messages.add_message(
                 request,
                 messages.SUCCESS,
-                "Link to JIRA issue succesfully deleted",
+                "Link to JIRA issue successfully deleted",
                 extra_tags="alert-success",
             )
 
@@ -3338,7 +3338,7 @@ def push_to_jira(request, fid):
         )
         logger.debug("pushing to jira from finding.push_to-jira()")
 
-        # it may look like succes here, but the push_to_jira are swallowing exceptions
+        # it may look like success here, but the push_to_jira are swallowing exceptions
         # but cant't change too much now without having a test suite,
         # so leave as is for now with the addition warning message
         # to check alerts for background errors.
@@ -3408,7 +3408,7 @@ def calculate_possible_related_actions_for_similar_finding(
             {
                 "action": "None",
                 "reason": ("This finding is the root of the cluster, use an action on another row, "
-                           "or the finding on top of the page to change the root of the cluser"),
+                           "or the finding on top of the page to change the root of the cluster"),
             },
         )
     elif similar_finding.original_finding.all():
